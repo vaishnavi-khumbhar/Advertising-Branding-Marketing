@@ -1,0 +1,23 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./page/Home";
+import About from "./page/About";
+import ServicesPage from "./page/ServicesPage";
+import CaseStudies from "./page/CaseStudies";
+import Contact from "./page/Contact";
+
+function App() {
+  return (
+    <BrowserRouter basename="/Advertising-Branding-Marketing">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
