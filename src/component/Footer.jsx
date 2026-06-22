@@ -81,8 +81,7 @@ export default function Footer() {
                   href={item.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-11 h-11 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center hover:bg-gradient-to-r hover:from-sky-500 hover:to-orange-500 duration-300 hover:-translate-y-1"
-                >
+className="w-11 h-11 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center text-orange-400 hover:text-white hover:bg-gradient-to-r hover:from-sky-500 hover:to-orange-500 duration-300 hover:-translate-y-1"                >
                   {item.icon}
                 </a>
               ))}

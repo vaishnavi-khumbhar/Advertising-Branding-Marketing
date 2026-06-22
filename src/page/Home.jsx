@@ -29,7 +29,7 @@ const Home = () => {
     <Results/>
     <Testimonials/>
     <CTA/>
-     <Footer/>
+    
     </>
   );
 };

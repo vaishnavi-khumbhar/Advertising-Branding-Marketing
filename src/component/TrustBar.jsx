@@ -9,18 +9,11 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 
-const brands = [
-  { name: "VARAD", icon: Leaf },
-  { name: "AVENUE", icon: Building2 },
-  { name: "FITLIFE", icon: Dumbbell },
-  { name: "ARISE", icon: Anchor },
-  { name: "NEXORA", icon: Atom },
-];
 
 
 const TrustBar = () => {
   return (
-    <section className="relative overflow-hidden py-15 md:py-16 bg-gradient-to-b from-white via-sky-50 to-white">
+    <section className="relative overflow-hidden py-15 md:py-12 bg-gradient-to-b from-white via-sky-50 to-white">
 
       {/* Blur */}
       <div className="absolute -top-20 left-0 w-72 md:w-96 h-72 md:h-96 bg-sky-200 rounded-full blur-[100px] opacity-40"></div>
@@ -38,7 +31,6 @@ const TrustBar = () => {
           className="text-center"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-md border border-sky-100 text-blue-600 text-sm font-medium">
-            <Sparkles size={14} className="text-orange-500" />
             Trusted By Growing Brands
           </div>
 
@@ -142,42 +134,8 @@ const TrustBar = () => {
 
         </div>
 
-        {/* Brand Marquee */}
-        <div className="overflow-hidden mt-16 md:mt-24">
 
-          <motion.div
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-            className="flex gap-5 w-max"
-          >
-            {[...brands, ...brands].map((brand, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-3 px-6 py-5 bg-white rounded-3xl shadow-lg border border-gray-100 min-w-[200px]"
-              >
-                <div className="w-17 h-17 rounded-full bg-gradient-to-br from-sky-500 to-orange-500 flex items-center justify-center">
-                  <brand.icon className="text-white" size={20} />
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-gray-900">
-                    {brand.name}
-                  </h3>
-
-                  <p className="text-xs text-gray-500">
-                    Trusted Partner
-                  </p>
-                </div>
-              </div>
-            ))}
-          </motion.div>
-
-        </div>
-
+       
        
       </div>
     </section>
