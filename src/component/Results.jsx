@@ -127,9 +127,12 @@ function ResultCard({ item, start, index }) {
         {item.suffix}
       </h3>
 
-      <p className="mt-2 text-sm sm:text-base text-gray-500">
-        {item.title}
-      </p>
+     <p
+  className="mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#0F1E3D] leading-tight"
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  {item.title}
+</p>
     </motion.div>
   );
 }
@@ -168,9 +171,37 @@ export default function Results() {
         
             
         <div className="text-center">
-  <div className="inline-flex px-4 sm:px-5 py-2 rounded-full bg-violet-100 text-blue-600 text-xs sm:text-sm font-medium">
-    Our Results
-  </div>
+  
+
+   <div
+  className="
+  inline-flex items-center gap-2
+  px-5 sm:px-6
+  py-2.5
+
+  rounded-full
+
+  bg-gradient-to-r
+  from-orange-50
+  to-white
+
+  border border-orange-200
+
+  shadow-md shadow-orange-100/40
+
+  text-[#0F1E3D]
+  text-base sm:text-lg
+
+  font-semibold
+
+  hover:scale-105
+  transition-all duration-300
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+ Our Results
+</div>
+
 
   <h2
     className="mt-5 flex flex-wrap justify-center gap-2 sm:gap-3
@@ -178,11 +209,13 @@ export default function Results() {
     font-bold leading-tight"
     style={{ fontFamily: "Cormorant Garamond" }}
   >
-    <span className="text-gray-900">
+    <span className="text-gray-900" style={{ fontFamily: "Cormorant Garamond" }}
+>
       Numbers That
     </span>
 
-    <span className="text-orange-500">
+    <span className="text-orange-500" style={{ fontFamily: "Cormorant Garamond" }}
+>
       Grow Brands
     </span>
   </h2>
@@ -194,7 +227,8 @@ export default function Results() {
 </p>
 </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-10 sm:mt-14">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-10 sm:mt-14" style={{ fontFamily: "Cormorant Garamond" }}
+>
   {results.map((item, index) => (
     <ResultCard
       key={item.title}
@@ -224,7 +258,17 @@ export default function Results() {
                     alt={client.name}
                     className="h-30 sm:h-50 object-contain"
                  style={{ fontFamily: "Cormorant Garamond" }} />
-                <p className="mt-2 text-base sm:text-lg text-gray-600 font-semibold font-sans">
+                <p
+  className="
+  mt-3
+  text-lg sm:text-xl md:text-2xl
+  font-semibold
+  text-[#0F1E3D]
+  text-center
+  leading-tight
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
   {client.name}
 </p>
                 </div>

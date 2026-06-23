@@ -179,27 +179,46 @@ const Hero = () => {
           >
 
             {/* Badge */}
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-sky-100 shadow-sm text-sm font-medium text-blue-600">
-              <Sparkles size={0} className="text-orange-500" />
-              Leading Digital Marketing Agency in Pune
-            </span>
+          <span
+  className="
+  inline-flex items-center justify-center
+  gap-2 sm:gap-3
 
+  px-4 sm:px-6 lg:px-7
+  py-2 sm:py-2.5
+
+  rounded-full
+  bg-white
+  border border-sky-100
+  shadow-md
+
+  text-sm sm:text-lg md:text-xl lg:text-2xl
+  font-semibold
+  text-orange-500
+
+  text-center
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  Leading Digital Marketing Agency in Pune
+</span>
             {/* Heading */}
-           <h1
-  className="mt-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.1] font-bold text-gray-900"
+        <h1
+  className="mt-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1] font-bold text-gray-900"
   style={{ fontFamily: "Cormorant Garamond" }}
 >
-  Turn Attention  Into 
-  <br />
- <span className="text-orange-500">Customers..</span>
+  Turn Attention Into
+
+  <span className="text-orange-500"> Customers..</span>
+
   <br />
   And Brands Into
   <br />
-  Market <span className="text-blue-600">Leaders</span>
+  Market <span className="text-orange-500">Leaders</span>
 </h1>
             {/* Paragraph */}
             <p
-              className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl md:text-lg lg:text-xl"
+              className="mt-6 text-xl text-gray-600 leading-relaxed max-w-xl md:text-xl lg:text-2xl"
               style={{ fontFamily: "Poppins" }}
             >
               We collaborate with ambitious brands to create the
@@ -212,34 +231,34 @@ const Hero = () => {
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
 
               <button
-                className="group relative overflow-hidden flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#6CB4EE] text-white shadow-xl hover:bg-[#5AAAE8] shadow-xl hover:scale-105 transition-all duration-300"
-                style={{
-                  fontFamily: "Poppins",
-                  fontWeight: 600,
-                }}
-              >
-                Book Free Consultation
+  className="group flex items-center justify-center gap-2 rounded-full bg-[#FF7A00] px-9 py-4.5 text-white text-lg sm:text-xl shadow-lg shadow-orange-500/25 transition-all duration-300 hover:scale-105 hover:bg-[#E66A00]"
+  style={{
+ fontFamily: "Cormorant Garamond" ,
+     fontWeight: 600,
+  }}
+>
+  Book Free Consultation
 
-                <ArrowRight
-                  size={18}
-                  className="group-hover:translate-x-1 transition"
-                />
-              </button>
+  <ArrowRight
+    size={20}
+    className="transition-transform group-hover:translate-x-1"
+  />
+</button>
 
               <button
-                className="px-8 py-4 rounded-full bg-white border border-gray-200 text-gray-800 shadow-md hover:border-blue-600 transition-all duration-300"
-                style={{
-                  fontFamily: "Poppins",
-                  fontWeight: 600,
-                }}
-              >
-                View Our Work
-              </button>
+  className="rounded-full border border-[#FF7A00] bg-white px-9 py-4.5 text-[#FF7A00] text-lg sm:text-xl shadow-md transition-all duration-300 hover:bg-[#FF7A00] hover:text-white hover:shadow-lg"
+  style={{
+ fontFamily: "Cormorant Garamond" ,
+    fontWeight: 600,
+  }}
+>
+  View Our Work
+</button>
 
             </div>
 
             {/* Stats */}
-<div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-wrap justify-center lg:justify-start gap-6 lg:gap-8">
+<div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-wrap justify-center lg:justify-start gap-6 lg:gap-8 " style={{ fontFamily: "Cormorant Garamond" }}>
   {stats.map((stat, i) => (
     <div
       key={stat.label}
@@ -247,17 +266,17 @@ const Hero = () => {
     >
       {/* Icon */}
       <div
-        className={`w-10 h-10 sm:w-11 sm:h-11 rounded-full ${stat.bg} flex items-center justify-center flex-shrink-0`}
+        className={`w-12 h-12 sm:w-13 sm:h-13 rounded-full ${stat.bg} flex items-center justify-center flex-shrink-0`}
       >
         <stat.icon
-          size={18}
+          size={22}
           className="text-white"
         />
       </div>
 
       {/* Text */}
       <div>
-        <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 leading-none">
+        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 leading-none">
           <Counter
             value={stat.value}
             suffix={stat.suffix}
@@ -265,7 +284,7 @@ const Hero = () => {
           />
         </h3>
 
-        <p className="text-[11px] sm:text-xs lg:text-sm text-gray-500">
+        <p className="text-sm sm:text-base lg:text-lg text-gray-500">
           {stat.label}
         </p>
       </div>
@@ -297,16 +316,16 @@ const Hero = () => {
            <div className="flex items-center justify-between mb-6">
 
   <h3
-    className="text-lg sm:text-xl font-bold text-gray-800 whitespace-nowrap"
-    style={{ fontFamily: "Poppins" }}
+    className="text-xl sm:text-2xl font-bold text-gray-800 whitespace-nowrap"
+    style={{  fontFamily: "Cormorant Garamond"  }}
   >
     Growth Dashboard
   </h3>
 
-  <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 shrink-0">
-    <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+  <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-green-100 shrink-0">
+    <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
 
-    <span className="text-xs sm:text-sm text-green-600 font-medium">
+    <span className="text-sm sm:text-base text-green-600 font-medium">
       Live
     </span>
   </div>
@@ -318,19 +337,21 @@ const Hero = () => {
   <div className="bg-sky-50 rounded-3xl p-4 sm:p-5">
     <div className="flex justify-between items-center">
 
-      <span className="text-sm sm:text-base text-gray-500">
+      <span className="text-base sm:text-lg text-gray-500 ">
         Website Traffic
       </span>
 
-      <TrendingUp className="text-blue-600 w-5 h-5" />
+      <TrendingUp className="text-blue-600 w-6 h-6" />
 
     </div>
 
-    <h4 className="mt-3 text-2xl sm:text-3xl font-bold text-gray-900">
+    <h4 className="mt-3 text-3xl sm:text-4xl font-bold text-gray-900"
+    style={{ fontFamily: "Cormorant Garamond" }}
+>
       +280%
     </h4>
 
-    <div className="mt-4 h-2 rounded-full bg-sky-100 overflow-hidden">
+    <div className="mt-4 h-2.5 rounded-full bg-sky-100 overflow-hidden">
       <motion.div
         initial={{ width: 0 }}
         whileInView={{ width: "85%" }}
@@ -345,19 +366,23 @@ const Hero = () => {
   <div className="bg-orange-50 rounded-3xl p-4 sm:p-5">
     <div className="flex justify-between items-center">
 
-      <span className="text-sm sm:text-base text-gray-500">
+      <span className="text-base sm:text-lg text-gray-500"
+      style={{ fontFamily: "Cormorant Garamond" }}
+>
         Leads Generated
       </span>
 
-      <Users className="text-orange-500 w-5 h-5" />
+      <Users className="text-orange-500 w-6 h-6" />
 
     </div>
 
-    <h4 className="mt-3 text-2xl sm:text-3xl font-bold text-gray-900">
+    <h4 className="mt-3 text-3xl sm:text-4xl font-bold text-gray-900"
+    style={{ fontFamily: "Cormorant Garamond" }}
+>
       1,250+
     </h4>
 
-    <div className="mt-4 h-2 rounded-full bg-orange-100 overflow-hidden">
+    <div className="mt-4 h-2.5 rounded-full bg-orange-100 overflow-hidden">
       <motion.div
         initial={{ width: 0 }}
         whileInView={{ width: "92%" }}
@@ -372,19 +397,20 @@ const Hero = () => {
   <div className="bg-sky-50 rounded-3xl p-4 sm:p-5">
     <div className="flex justify-between items-center">
 
-      <span className="text-sm sm:text-base text-gray-500">
+      <span className="text-base sm:text-lg text-gray-500 " style={{ fontFamily: "Cormorant Garamond" }}>
+        
         Conversion Rate
       </span>
 
-      <Target className="text-blue-600 w-5 h-5" />
+      <Target className="text-blue-600 w-6 h-6" />
 
-    </div>
+    </div>  
 
-    <h4 className="mt-3 text-2xl sm:text-3xl font-bold text-gray-900">
+    <h4 className="mt-3 text-3xl sm:text-4xl font-bold text-gray-900" style={{ fontFamily: "Cormorant Garamond" }}>
       8.7%
     </h4>
 
-    <div className="mt-4 h-2 rounded-full bg-sky-100 overflow-hidden">
+    <div className="mt-4 h-2.5 rounded-full bg-sky-100 overflow-hidden">
       <motion.div
         initial={{ width: 0 }}
         whileInView={{ width: "75%" }}
@@ -407,16 +433,16 @@ const Hero = () => {
     duration: 4,
     repeat: Infinity,
   }}
-  className="absolute -top-17 -left-10 hidden lg:block bg-white rounded-3xl shadow-xl p-4 z-10"
+  className="absolute -top-17 -left-10 hidden lg:block bg-white rounded-3xl shadow-xl p-5 z-10"
 >
   <div className="flex items-center gap-3">
-    <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
-      <Megaphone className="text-orange-500" />
+    <div className="w-14 h-14 rounded-full bg-orange-100 flex items-center justify-center">
+      <Megaphone className="text-orange-500" size={22} />
     </div>
 
-    <div>
-      <p className="text-gray-500 text-sm">Meta Ads ROI</p>
-      <h3 className="text-2xl font-bold text-orange-500">4.8x</h3>
+    <div style={{ fontFamily: "Cormorant Garamond" }}>
+      <p className="text-gray-500 text-base">Meta Ads ROI</p>
+      <h3 className="text-3xl font-bold text-orange-500">4.8x</h3>
     </div>
   </div>
 </motion.div>
@@ -427,16 +453,16 @@ const Hero = () => {
   whileInView={{ opacity: 1, x: 0 }}
   viewport={{ once: true }}
   transition={{ duration: 0.7 }}
-  className="absolute -bottom-8 -right-10 hidden lg:block bg-white rounded-3xl shadow-xl p-5 z-10"
+  className="absolute -bottom-8 -right-10 hidden lg:block bg-white rounded-3xl shadow-xl p-6 z-10"
 >
   <div className="flex items-center gap-3">
-    <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
-      <Search className="text-blue-600" />
+    <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center">
+      <Search className="text-blue-600" size={22} />
     </div>
 
-    <div>
-      <p className="text-gray-500 text-sm">Organic Growth</p>
-      <h3 className="text-2xl font-bold text-blue-600">+100%</h3>
+    <div style={{ fontFamily: "Cormorant Garamond" }}>
+      <p className="text-gray-500 text-base">Organic Growth</p>
+      <h3 className="text-3xl font-bold text-blue-600">+100%</h3>
     </div>
   </div>
 </motion.div>
@@ -445,7 +471,7 @@ const Hero = () => {
         </div>
 
         {/* Trusted Brands */}
-      <div className="mt-10 bg-white rounded-[28px] shadow-xl border border-gray-100 py-6 overflow-hidden">
+      <div className="mt-10 bg-white rounded-[28px] shadow-xl border border-gray-100 py-7 overflow-hidden">
   <div className="flex items-center gap-8 md:gap-12 w-max animate-marquee">
     {[...brands, ...brands].map((brand, index) => (
       <div
@@ -453,17 +479,17 @@ const Hero = () => {
         className="flex items-center gap-2 md:gap-3 whitespace-nowrap"
       >
         {/* Icon */}
-        <div className="w-9 h-9 md:w-12 md:h-12 rounded-full bg-sky-50 flex items-center justify-center flex-shrink-0">
+        <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-sky-50 flex items-center justify-center flex-shrink-0">
           <brand.icon
-            size={18}
-            className="text-[#0070B8] md:w-[22px] md:h-[22px]"
+            size={20}
+            className="text-[#0070B8] md:w-[26px] md:h-[26px]"
           />
         </div>
 
         {/* Brand Name */}
         <span
-          className="text-sm md:text-lg font-semibold text-gray-700"
-          style={{ fontFamily: "Poppins" }}
+          className="text-base md:text-xl font-semibold text-gray-700"
+          style={{  fontFamily: "Cormorant Garamond"  }}
         >
           {brand.name}
         </span>

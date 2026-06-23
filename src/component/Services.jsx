@@ -52,9 +52,37 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="inline-flex px-5 py-2 rounded-full bg-violet-100 text-blue-600 text-sm font-medium">
-           Our Expertise
-          </div>
+         
+
+
+<div
+  className="
+  inline-flex items-center gap-2
+  px-5 sm:px-6
+  py-2.5
+
+  rounded-full
+
+  bg-gradient-to-r
+  from-orange-50
+  to-white
+
+  border border-orange-200
+
+  shadow-md shadow-orange-100/40
+
+  text-[#0F1E3D]
+  text-base sm:text-lg
+
+  font-semibold
+
+  hover:scale-105
+  transition-all duration-300
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+   Our Expertise
+</div>
 
           <h2
             className="mt-6 text-3xl md:text-5xl lg:text-6xl font-bold leading-tight"
@@ -75,7 +103,8 @@ export default function Services() {
         </motion.div>
 
         {/* Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-7 mt-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-7 mt-16"   style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
 
           {services.map((service, index) => (
             <motion.div
@@ -146,9 +175,36 @@ export default function Services() {
   {/* Heading */}
   <div className="text-center">
 
-    <div className="inline-flex px-5 py-2 rounded-full bg-violet-100 text-blue-600 text-sm md:text-base font-medium">
-      Our Services
-    </div>
+    
+      <div
+  className="
+  inline-flex items-center gap-2
+  px-5 sm:px-6
+  py-2.5
+
+  rounded-full
+
+  bg-gradient-to-r
+  from-orange-50
+  to-white
+
+  border border-orange-200
+
+  shadow-md shadow-orange-100/40
+
+  text-[#0F1E3D]
+  text-base sm:text-lg
+
+  font-semibold
+
+  hover:scale-105
+  transition-all duration-300
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  Our Services
+</div>
+
 
    <h2
   className="mt-6 text-4xl md:text-6xl lg:text-7xl font-bold leading-tight"
@@ -279,31 +335,40 @@ export default function Services() {
 </p>
 
         {/* Button */}
-        <button
-          className="
-          mt-6
-          mx-auto
-          w-[170px]
-          md:w-[180px]
-          h-12
-          md:h-14
-          rounded-2xl
-          bg-gradient-to-r
-          from-sky-500
-          to-orange-500
-          text-white
-          font-semibold
-          flex
-          items-center
-          justify-center
-          gap-2
-          shadow-lg
-          transition-all
-          duration-300
-          hover:scale-105
-          hover:shadow-2xl
-          "
-        >
+       <button
+  className="
+  mt-6
+  mx-auto
+  w-[170px]
+  md:w-[180px]
+  h-12
+  md:h-14
+
+  rounded-2xl
+
+  bg-orange-500
+
+  text-white
+  text-lg
+  font-semibold
+
+  flex
+  items-center
+  justify-center
+  gap-2
+
+  shadow-lg
+  shadow-orange-500/25
+
+  transition-all
+  duration-300
+
+  hover:bg-orange-600
+  hover:scale-105
+  hover:shadow-xl
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
           Read More
           <ArrowUpRight size={18} />
         </button>

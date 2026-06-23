@@ -31,9 +31,37 @@ export default function CaseStudy() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="inline-flex px-5 py-2 rounded-full bg-violet-100 text-blue-600 text-sm font-medium">
-            Case Studies
-          </div>
+         
+
+          <div
+  className="
+  inline-flex items-center gap-2
+  px-5 sm:px-6
+  py-2.5
+
+  rounded-full
+
+  bg-gradient-to-r
+  from-orange-50
+  to-white
+
+  border border-orange-200
+
+  shadow-md shadow-orange-100/40
+
+  text-[#0F1E3D]
+  text-base sm:text-lg
+
+  font-semibold
+
+  hover:scale-105
+  transition-all duration-300
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  Case Studies
+</div>
+
 
           <h2
             className="mt-6 flex flex-wrap justify-center gap-3 text-3xl md:text-5xl lg:text-6xl font-bold leading-tight"
@@ -150,10 +178,14 @@ export default function CaseStudy() {
                   </div>
 
                   {/* Button */}
-                  <button className="mt-7 flex items-center gap-2 text-gray-900 font-semibold hover:text-orange-500 duration-300">
-                    View Project
-                    <ArrowUpRight size={18} />
-                  </button>
+                  <button
+      onClick={() => navigate("/case-study")}
+className="mt-7 flex items-center gap-2 text-2xl font-bold text-gray-900 hover:text-orange-500 duration-300"
+style={{ fontFamily: "Cormorant Garamond, serif" }}
+    >
+      View Case Studies
+      <ArrowUpRight size={18} />
+    </button>
 
                 </div>
 

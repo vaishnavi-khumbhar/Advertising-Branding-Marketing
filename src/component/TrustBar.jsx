@@ -30,9 +30,38 @@ const TrustBar = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-md border border-sky-100 text-blue-600 text-sm font-medium">
-            Trusted By Growing Brands
-          </div>
+         
+
+ <div
+  className="
+  inline-flex items-center gap-2
+  px-5 sm:px-6
+  py-2.5
+
+  rounded-full
+
+  bg-gradient-to-r
+  from-orange-50
+  to-white
+
+  border border-orange-200
+
+  shadow-md shadow-orange-100/40
+
+  text-[#0F1E3D]
+  text-base sm:text-lg
+
+  font-semibold
+
+  hover:scale-105
+  transition-all duration-300
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+ Trusted By Growing Brands
+</div>
+
+          
 
           <h2
             className="mt-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
@@ -63,9 +92,11 @@ const TrustBar = () => {
 
               <div className="absolute top-0 right-0 w-28 md:w-40 h-28 md:h-40 bg-sky-100 rounded-full blur-3xl opacity-50"></div>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug" style={{ fontFamily: "Cormorant Garamond" }}
+>
                 Elevating Brands With
-                <span className="text-orange-500">
+                <span className="text-orange-500" style={{ fontFamily: "Cormorant Garamond" }}
+>
                   {" "}Premium Strategy
                 </span>
               </h3>
@@ -119,7 +150,8 @@ const TrustBar = () => {
                     {item.no}
                   </h2>
 
-                  <h3 className="mt-2 text-xl font-semibold text-orange-500">
+                  <h3 className="mt-2 text-xl font-semibold text-orange-500" style={{ fontFamily: "Cormorant Garamond" }}
+>
                     {item.title}
                   </h3>
 

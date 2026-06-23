@@ -192,13 +192,15 @@ function About() {
           <span
             className="mb-6 inline-block rounded-full border border-[#FF6B1A]/30 bg-white/80 backdrop-blur px-5 py-2 text-sm font-semibold tracking-wide text-[#FF6B1A] shadow-md"
             data-aos="fade-down"
-          >
+            style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
             About Us
           </span>
 
           <h1
             className="font-['Playfair_Display',serif] text-3xl sm:text-4xl font-bold leading-tight text-[#0F1E3D] md:text-5xl"
-            data-aos="fade-up"
+            data-aos="fade-up"   style={{ fontFamily: "Cormorant Garamond, serif" }}
+
           >
             About Advertising
             <span className="block text-[#FF6B1A]">and Branding Marketing</span>
@@ -213,27 +215,52 @@ function About() {
             data-aos="fade-up"
             data-aos-delay="150"
           >
-            <button
-  onClick={() => navigate("/contact")}
-  className="
-    rounded-full
-    bg-gradient-to-r from-[#0070B8] to-[#FF6B1A]
-    px-6 sm:px-7 py-3
-    text-sm sm:text-base font-semibold text-white
-    shadow-lg shadow-blue-500/20
-    transition-all duration-300
-    hover:scale-105 hover:shadow-xl
-  "
->
-  Book Free Consultation
-</button>
 
-            <button
-              onClick={() => navigate("/OurWork")}
-              className="rounded-full border-2 border-[#0F1E3D] px-6 sm:px-7 py-3 text-sm sm:text-base font-semibold text-[#0F1E3D] transition-all hover:bg-[#0F1E3D] hover:text-white hover:scale-105"
-            >
-              View Our Work
-            </button>
+          <div
+  className="
+    flex flex-col sm:flex-row
+    gap-4
+    items-center
+    justify-center
+    mt-6
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  <button
+    onClick={() => navigate("/contact")}
+    className="
+      rounded-full
+      bg-white
+      border-2 border-orange-500
+      px-6 sm:px-7 py-3
+      text-lg sm:text-xl font-bold text-orange-600
+      shadow-lg
+      transition-all duration-300
+      hover:bg-orange-500 hover:text-white
+      hover:scale-105 hover:shadow-xl
+      w-full sm:w-auto
+    "
+  >
+    Book Free Consultation
+  </button>
+
+  <button
+    onClick={() => navigate("/OurWork")}
+    className="
+      rounded-full
+      border-2 border-orange-500
+      px-6 sm:px-7 py-3
+      text-lg sm:text-xl font-bold text-orange-600
+      transition-all duration-300
+      hover:bg-orange-500 hover:text-white
+      hover:scale-105 hover:shadow-lg
+      w-full sm:w-auto
+    "
+  >
+    View Our Work
+  </button>
+</div>
+
           </div>
         </div>
       </section>
@@ -243,11 +270,40 @@ function About() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-12 sm:mb-16 max-w-2xl text-center" data-aos="fade-up">
 
-            <div className="inline-flex px-5 py-2 rounded-full bg-violet-100 text-blue-600 text-sm font-medium">
-              About Us
-            </div>
+           
 
-            <h2 className="mt-3 font-['Playfair_Display',serif] text-2xl sm:text-3xl font-bold md:text-4xl leading-tight">
+             <div
+  className="
+  inline-flex items-center gap-2
+  px-5 sm:px-6
+  py-2.5
+
+  rounded-full
+
+  bg-gradient-to-r
+  from-orange-50
+  to-white
+
+  border border-orange-200
+
+  shadow-md shadow-orange-100/40
+
+  text-[#0F1E3D]
+  text-base sm:text-lg
+
+  font-semibold
+
+  hover:scale-105
+  transition-all duration-300
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+   About Us
+</div>
+
+
+            <h2 className="mt-3  text-2xl sm:text-3xl font-bold md:text-4xl leading-tight"   style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
               <span className="text-[#111111]">About Advertising</span>
               <span className="text-[#FF7A00]"> &amp; Branding Marketing </span>
             </h2>
@@ -261,28 +317,34 @@ function About() {
               data-aos="zoom-in"
             >
               {/* Circular Image */}
-              <div className="bg-gradient-to-br from-[#0070B8] to-[#FF6B1A] p-2 rounded-full shadow-2xl">
-                <div className="
-                  w-56 h-56
-                  sm:w-72 sm:h-72
-                  md:w-96 md:h-96
-                  lg:w-[420px] lg:h-[420px]
-                  rounded-full overflow-hidden bg-white
-                ">
-                  <img
-                    src={AboutImg}
-                    alt="Advertising Branding Marketing"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
+              <div className="bg-[#FFA355] p-2 rounded-full shadow-2xl">
+  <div
+    className="
+      w-56 h-56
+      sm:w-72 sm:h-72
+      md:w-96 md:h-96
+      lg:w-[420px] lg:h-[420px]
+      rounded-full overflow-hidden bg-white
+    "
+  >
+    <img
+      src={AboutImg}
+      alt="Advertising Branding Marketing"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
+              
 
               {/* Founder Card */}
               <div className="mt-6 w-full max-w-xs sm:max-w-sm rounded-2xl bg-white px-6 py-4 shadow-lg flex items-center justify-between">
                 <div>
-                  <h4 className="font-semibold text-[#0F1E3D] text-lg">
-                    Arti Hulle
-                  </h4>
+                  <h4
+  className="font-semibold text-[#ff7a00] text-2xl"
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  Arti Hulle
+</h4>
 
                   <span className="text-sm text-[#64748B]">
                     Founder • 2024
@@ -297,7 +359,8 @@ function About() {
             <div className="lg:col-span-7" data-aos="fade-left">
 
               {/* Heading */}
-              <h3 className="font-['Playfair_Display',serif] text-2xl sm:text-3xl lg:text-5xl font-bold text-[#0F1E3D] leading-tight text-center lg:text-left">
+              <h3 className=" text-2xl sm:text-3xl lg:text-5xl font-bold text-[#0F1E3D] leading-tight text-center lg:text-left"   style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
                 Building Brands That Inspire Growth
               </h3>
 
@@ -326,9 +389,12 @@ function About() {
               {/* Paragraph 3 */}
               <p className="mt-4 text-[15px] sm:text-base leading-7 text-[#475569] text-justify">
                 That realization sparked an idea. In 2024,
-                <span className="font-semibold text-[#0F1E3D]">
-                  {" "}A B Marketing Wings
-                </span>
+               <span
+  className="font-semibold text-xl md:text-2xl text-[#ff7a00]"
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  {" "}Advertising Branding & Marketing
+</span>
                 {" "}was born with a simple mission — helping businesses become
                 visible, memorable, and future-ready. We believe every
                 business has a unique story worth telling and a brand worth
@@ -336,24 +402,40 @@ function About() {
               </p>
 
               {/* Feature Cards */}
-              <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-2 md:grid-cols-4">
-                {[
-                  "Digital Growth",
-                  "Brand Strategy",
-                  "Creative Marketing",
-                  "Results Driven",
-                ].map((label, i) => (
-                  <div
-                    key={label}
-                    data-aos="flip-up"
-                    data-aos-delay={100 * (i + 1)}
-                    className="rounded-2xl border border-[#0F1E3D]/10 bg-white px-3 py-4 text-center text-xs sm:text-sm font-semibold text-[#0F1E3D] shadow-sm hover:shadow-md transition-all"
-                  >
-                    {label}
-                  </div>
-                ))}
-              </div>
-
+            <div
+  className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 max-w-xl mx-auto px-3 sm:px-0"
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  {[
+    "Digital Growth",
+    "Brand Strategy",
+    "Creative Marketing",
+    "Results Driven",
+  ].map((label, i) => (
+    <div
+      key={label}
+      data-aos="flip-up"
+      data-aos-delay={100 * (i + 1)}
+      className="
+        rounded-2xl
+        border border-orange-300
+        bg-white
+        px-3 py-4 sm:px-4 sm:py-5
+        text-center
+        text-base sm:text-lg md:text-xl
+        font-bold
+        text-orange-600
+        shadow-sm
+        hover:shadow-lg
+        hover:scale-105
+        transition-all duration-300
+        break-words
+      "
+    >
+      {label}
+    </div>
+  ))}
+</div>
             </div>
           </div>
         </div>
@@ -369,9 +451,38 @@ function About() {
             data-aos="fade-up"
           >
 
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-sky-100 shadow-sm text-sm font-medium text-blue-600">
-              Why Choose Us
-            </span>
+           
+
+            <div
+  className="
+  inline-flex items-center gap-2
+  px-5 sm:px-6
+  py-2.5
+
+  rounded-full
+
+  bg-gradient-to-r
+  from-orange-50
+  to-white
+
+  border border-orange-200
+
+  shadow-md shadow-orange-100/40
+
+  text-[#0F1E3D]
+  text-base sm:text-lg
+
+  font-semibold
+
+  hover:scale-105
+  transition-all duration-300
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+                Why Choose Us
+
+</div>
+
 
             <h2 className="mt-3 font-['Playfair_Display',serif] text-2xl sm:text-3xl font-bold md:text-5xl leading-tight">
               <span className="text-[#0F172A]">Why Choose</span>{" "}
@@ -403,11 +514,15 @@ function About() {
                   ✓
                 </div>
 
+
                 {/* Content */}
                 <div>
-                  <h3 className="font-semibold text-lg text-[#0F172A]">
-                    {item.title}
-                  </h3>
+                  <h3
+  className="font-semibold text-2xl text-[#0F172A]"
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  {item.title}
+</h3>
 
                   <p className="mt-2 text-sm leading-7 text-gray-500">
                     {item.desc}
@@ -420,16 +535,40 @@ function About() {
         </div>
       </section>
 
+
+
+
+
+{/* marquee */}
+<section className="relative w-full  py-15">
+       <div className="pointer-events-none absolute top-1/2 left-0 w-full overflow-hidden -translate-y-1/2">
+        <div
+          className="
+            whitespace-nowrap
+            font-bold
+            text-[#0F1E3D]/[0.20]
+            animate-marquee
+            text-3xl sm:text-5xl md:text-6xl xl:text-7xl
+          "
+          style={{ fontFamily: "Cormorant Garamond, serif" }}
+        >
+          Advertising Branding & Marketing • Advertising Branding & Marketing •
+          Advertising Branding & Marketing • Advertising Branding & Marketing
+        </div>
+      </div>
+      {/* Background Marquee */}
+     
+
+    </section>
       {/* ---------------- TEAM ---------------- */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-orange-50 py-10 sm:py-14 lg:py-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-orange-50 py-20 sm:py-14 lg:py-20">
         {/* Blur Background */}
         <div className="absolute top-0 left-0 h-60 w-60 rounded-full bg-sky-200/20 blur-3xl"></div>
         <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-orange-200/20 blur-3xl"></div>
 
         {/* Background Text */}
-        <div className="pointer-events-none absolute top-1/2 left-0 hidden xl:block w-full -translate-y-1/2 whitespace-nowrap text-7xl font-bold text-[#0F1E3D]/[0.03]">
-          Advertising Branding & Marketing • Advertising Branding & Marketing
-        </div>
+        
+     
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
 
@@ -440,11 +579,40 @@ function About() {
               className="lg:col-span-5 text-center lg:text-left"
               data-aos="fade-right"
             >
-              <span className="inline-flex items-center rounded-full border border-sky-100 bg-white px-4 py-2 text-sm font-medium text-[#0070B8] shadow-sm">
-                Our Creative Team
-              </span>
+             
 
-              <h2 className="mt-4 font-['Playfair_Display',serif] text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight">
+              <div
+  className="
+  inline-flex items-center gap-2
+  px-5 sm:px-6
+  py-2.5
+
+  rounded-full
+
+  bg-gradient-to-r
+  from-orange-50
+  to-white
+
+  border border-orange-200
+
+  shadow-md shadow-orange-100/40
+
+  text-[#0F1E3D]
+  text-base sm:text-lg
+
+  font-semibold
+
+  hover:scale-105
+  transition-all duration-300
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  Our Creative Team
+</div>
+
+
+              <h2 className="mt-4 text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight"   style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
                 <span className="text-[#0F172A]">Delivering Branding</span>
                 <br />
                 <span className="text-[#FF7A00]">Excellence</span>
@@ -456,28 +624,30 @@ function About() {
                 design, branding and digital innovation.
               </p>
 
-              <button
+             <button
   onClick={() => navigate("/contact")}
   className="
     mt-7 inline-flex items-center gap-2
     rounded-full
-    bg-gradient-to-r from-[#0070B8] to-[#FF6B1A]
+    bg-orange-500
     px-7 py-3
     font-semibold text-white
-    shadow-lg shadow-blue-500/20
+    shadow-lg shadow-orange-500/30
     transition-all duration-300
+    hover:bg-orange-600
     hover:scale-105 hover:shadow-xl
+    group
   "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
 >
   Connect With Us
   <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
 </button>
-
             </div>
 
 
             {/* Right Cards */}
-            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5" >
   {teamData.map((item, i) => (
     <div
       key={item.title}
@@ -502,9 +672,12 @@ function About() {
       </div>
 
       {/* Title */}
-      <h3 className="text-lg font-semibold text-[#0F172A]">
-        {item.title}
-      </h3>
+      <h3
+  className="text-2xl sm:text-2xl font-semibold text-[#0F172A]"
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  {item.title}
+</h3>
 
       {/* Description */}
       <p className="mt-2 text-sm leading-7 text-gray-500">
@@ -531,11 +704,39 @@ function About() {
       className="mx-auto mb-14 max-w-3xl text-center px-2 sm:px-0"
       data-aos="fade-up"
     >
-      <span className="inline-flex items-center rounded-full border border-sky-100 bg-white px-5 py-2 text-xs sm:text-sm font-medium text-[#0070B8] shadow-sm">
-        Our Solutions
-      </span>
+      
+<div
+  className="
+  inline-flex items-center gap-2
+  px-5 sm:px-6
+  py-2.5
 
-      <h2 className="mt-4 font-['Playfair_Display',serif] text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight text-center">
+  rounded-full
+
+  bg-gradient-to-r
+  from-orange-50
+  to-white
+
+  border border-orange-200
+
+  shadow-md shadow-orange-100/40
+
+  text-[#0F1E3D]
+  text-base sm:text-lg
+
+  font-semibold
+
+  hover:scale-105
+  transition-all duration-300
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+   Our Solutions
+</div>
+
+
+      <h2 className="mt-4 font-['Playfair_Display',serif] text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight text-center"   style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
         <span className="text-[#0F172A]">Advertising &</span>
         {" "}
         <span className="text-[#FF7A00]">Marketing Solutions</span>
@@ -595,10 +796,11 @@ function About() {
       <div className="p-6 sm:p-7 text-center sm:text-left">
 
         <h3 className="
-          text-lg sm:text-xl font-bold text-[#0F172A]
+          text-lg sm:text-xl font-bold text-[#ff7a00]
           transition-colors duration-500
           group-hover:text-[#0070B8]
-        ">
+        "   style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
           {s.title}
         </h3>
 
@@ -622,7 +824,8 @@ function About() {
                 group-hover:bg-blue-50
                 group-hover:text-[#0070B8]
               "
-            >
+              style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
               {chip}
             </span>
           ))}
@@ -653,11 +856,39 @@ function About() {
       className="mx-auto mb-14 sm:mb-16 max-w-3xl text-center px-2"
       data-aos="fade-up"
     >
-      <span className="inline-flex items-center rounded-full border border-orange-100 bg-white px-5 py-2 text-xs sm:text-sm font-medium text-[#FF7A00] shadow-md">
-        Our Expertise
-      </span>
+      
 
-      <h2 className="mt-5 font-['Playfair_Display',serif] text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+<div
+  className="
+  inline-flex items-center gap-2
+  px-5 sm:px-6
+  py-2.5
+
+  rounded-full
+
+  bg-gradient-to-r
+  from-orange-50
+  to-white
+
+  border border-orange-200
+
+  shadow-md shadow-orange-100/40
+
+  text-[#0F1E3D]
+  text-base sm:text-lg
+
+  font-semibold
+
+  hover:scale-105
+  transition-all duration-300
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+   Our Expertise
+</div>
+
+      <h2 className="mt-5 font-['Playfair_Display',serif] text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight"   style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
         <span className="text-[#0F172A]">Driving Growth Through</span>{" "}
         <span className="text-[#FF7A00]">Creative Excellence</span>
       </h2>
@@ -687,7 +918,8 @@ function About() {
             transition-all duration-500
             hover:-translate-y-3 hover:shadow-2xl
           "
-        >
+          style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
 
           {/* Glow Effect */}
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-br from-orange-100/30 to-sky-100/30" />
@@ -705,13 +937,17 @@ function About() {
           </div>
 
           {/* TITLE */}
-          <h4 className="
-            relative mt-4 text-xs sm:text-sm font-semibold text-[#0F172A]
-            transition-colors duration-300
-            group-hover:text-[#FF7A00]
-          ">
-            {item.title}
-          </h4>
+        <h4
+  className="
+    relative mt-4
+    text-base sm:text-lg md:text-xl
+    font-semibold text-[#0F172A]
+    transition-colors duration-300
+    group-hover:text-[#FF7A00]
+  "
+>
+  {item.title}
+</h4>
 
           {/* UNDERLINE */}
           <div className="
@@ -745,8 +981,10 @@ bg-gradient-to-br from-white via-[#F7FAFF] to-[#FFF6F0]">
   {/* Content */}
   <div className="relative mx-auto max-w-3xl" data-aos="zoom-in">
 
-    <h2 className="font-['Playfair_Display',serif] text-2xl sm:text-4xl font-bold md:text-5xl leading-tight">
-      Let's Elevate 
+    <h2 className="font-['Playfair_Display',serif] text-2xl sm:text-4xl font-bold md:text-5xl leading-tight"   style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+      Let's Elevate  
+      {""}
        <span className="text-[#FF7A00]">Your Brand</span>
     </h2>
 
@@ -756,21 +994,23 @@ bg-gradient-to-br from-white via-[#F7FAFF] to-[#FFF6F0]">
     </p>
 
     {/* Button */}
-    <button
-      onClick={() => navigate("/contact")}
-      className="
-        mt-7 inline-flex items-center gap-2
+   <button
+  onClick={() => navigate("/contact")}
+  className="
+    mt-7 inline-flex items-center gap-2
     rounded-full
-    bg-gradient-to-r from-[#0070B8] to-[#FF6B1A]
+    bg-orange-500
     px-7 py-3
     font-semibold text-white
-    shadow-lg shadow-blue-500/20
+    shadow-lg shadow-orange-500/30
     transition-all duration-300
+    hover:bg-orange-600
     hover:scale-105 hover:shadow-xl
-      "
-    >
-      Contact Us Today
-    </button>
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  Contact Us Today
+</button>
 
   </div>
 

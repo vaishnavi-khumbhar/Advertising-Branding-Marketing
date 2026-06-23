@@ -58,7 +58,7 @@ function AnimatedRing({ percent }) {
 
         <defs>
           <linearGradient id="gradient">
-            <stop offset="0%" stopColor="#0EA5E9" />
+            <stop offset="0%" stopColor="#FB923C" />
             <stop offset="100%" stopColor="#FB923C" />
           </linearGradient>
         </defs>
@@ -90,10 +90,39 @@ export default function CTA() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-violet-100 text-blue-600 text-xs sm:text-sm font-medium">
-              <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-              Professional Agency
-            </div>
+           
+
+<div
+  className="
+  inline-flex items-center gap-2
+  px-5 sm:px-6
+  py-2.5
+
+  rounded-full
+
+  bg-gradient-to-r
+  from-orange-50
+  to-white
+
+  border border-orange-200
+
+  shadow-md shadow-orange-100/40
+
+  text-[#0F1E3D]
+  text-base sm:text-lg
+
+  font-semibold
+
+  hover:scale-105
+  transition-all duration-300
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+ Professional Agency
+</div>
+
+
+
 
             <h2
               className="mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
@@ -124,7 +153,8 @@ export default function CTA() {
                 <AnimatedRing percent={stat.percent} />
 
                 <div className="text-center sm:text-left">
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900"  style={{ fontFamily: "Cormorant Garamond, serif" }}
+ >
                     {stat.label}
                   </h3>
 
@@ -141,19 +171,28 @@ export default function CTA() {
           {/* Buttons */}
           <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6 mt-10 md:mt-14">
 
-            <button className="w-full md:w-auto px-8 py-4 rounded-2xl bg-white border border-slate-200 text-gray-900 font-semibold shadow-lg hover:-translate-y-1 duration-300">
-              Build Your Brand
-            </button>
+            <button
+  className="w-full md:w-auto px-10 py-5 rounded-2xl bg-white border-2 border-orange-500 text-orange-600 text-xl md:text-2xl font-bold shadow-lg hover:bg-orange-50 hover:scale-105 hover:shadow-2xl duration-300"
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  Build Your Brand
+</button>
 
-            <button className="w-full md:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-sky-500 to-orange-500 text-white font-semibold flex items-center justify-center gap-3 shadow-xl hover:-translate-y-1 duration-300">
-              Connect With Us
-              <ArrowRight size={18} />
-            </button>
+<button
+  className="w-full md:w-auto px-10 py-5 rounded-2xl bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 text-white text-xl md:text-2xl font-bold flex items-center justify-center gap-3 shadow-xl hover:scale-105 hover:shadow-2xl duration-300"
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+  Connect With Us
+  <ArrowRight size={24} />
+</button>
 
           </div>
 
           {/* Services */}
-          <div className="mt-10 md:mt-14 flex flex-wrap justify-center gap-3">
+<div
+  className="mt-10 md:mt-14 flex flex-wrap justify-center gap-3 text-2xl md:text-3xl font-semibold"
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
 
             {serviceBar.map((service, index) => (
               <motion.div
@@ -161,7 +200,7 @@ export default function CTA() {
                 key={index}
                 className="px-4 py-2 rounded-full bg-white shadow-md border border-slate-100 text-gray-600 text-xs sm:text-sm"
               >
-                <span className="w-2 h-2 bg-orange-500 rounded-full inline-block mr-2"></span>
+                <span className="w-2 h-2 bg-orange-500 rounded-full inline-block mr-2" ></span>
                 {service}
               </motion.div>
             ))}

@@ -108,9 +108,38 @@ export default function IndustrySection() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="inline-flex px-4 py-2 rounded-full bg-violet-100 text-blue-600 text-xs sm:text-sm font-medium">
-            What We Do
-          </div>
+          
+         
+           <div
+  className="
+  inline-flex items-center gap-2
+  px-5 sm:px-6
+  py-2.5
+
+  rounded-full
+
+  bg-gradient-to-r
+  from-orange-50
+  to-white
+
+  border border-orange-200
+
+  shadow-md shadow-orange-100/40
+
+  text-[#0F1E3D]
+  text-base sm:text-lg
+
+  font-semibold
+
+  hover:scale-105
+  transition-all duration-300
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+   What We Do
+</div>
+
+
 
           <h2
             className="mt-5 text-3xl md:text-5xl lg:text-6xl font-bold leading-tight"
@@ -161,7 +190,10 @@ export default function IndustrySection() {
                     {item.icon}
                   </div>
 
-                  <h3 className="mt-6 text-base sm:text-lg font-bold text-gray-800 text-center px-4">
+<h3
+  className="mt-6 text-xl sm:text-2xl font-bold text-gray-800 text-center px-4"
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
                     {item.label}
                   </h3>
 

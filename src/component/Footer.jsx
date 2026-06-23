@@ -38,7 +38,8 @@ export default function Footer() {
                   Advertising<span className="text-orange-400"> Branding & Marketing</span>
                 </h2>
 
-                <p className="text-sm text-slate-400 mt-1">
+                <p className="text-sm text-slate-400 mt-1"   style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
                   Digital Growth Partner
                 </p>
               </div>
@@ -92,14 +93,14 @@ className="w-11 h-11 rounded-2xl bg-white/10 border border-white/10 flex items-c
           {/* Quick Links */}
           <div className="text-center lg:text-left lg:pl-6">
 
-            <h3
-              className="text-[32px] sm:text-4xl font-bold text-orange-400 mb-7"
-              style={{ fontFamily: "Cormorant Garamond" }}
-            >
-              Quick Links
-            </h3>
+           <h3
+  className="text-2xl sm:text-3xl font-bold text-orange-400 mb-7"
+  style={{ fontFamily: "Cormorant Garamond" }}
+>
+  Quick Links
+</h3>
 
-            <div className="space-y-4 text-slate-400">
+            <div className="space-y-4 text-slate-400 text-center">
 
               <Link
                 to="/"
@@ -123,10 +124,10 @@ className="w-11 h-11 rounded-2xl bg-white/10 border border-white/10 flex items-c
               </Link>
 
               <Link
-                to="/ourwork"
+                to="/case-studies"
                 className="block hover:text-orange-400 duration-300"
               >
-                Our Work
+                Case Studies
               </Link>
 
               <Link
@@ -144,8 +145,8 @@ className="w-11 h-11 rounded-2xl bg-white/10 border border-white/10 flex items-c
           <div className="text-center lg:text-left">
 
             <h3
-              className="text-[32px] sm:text-4xl font-bold text-orange-400 mb-7"
-              style={{ fontFamily: "Cormorant Garamond" }}
+              className="text-2xl sm:text-3xl font-bold text-orange-400 mb-7"
+  style={{ fontFamily: "Cormorant Garamond" }}
             >
               Services
             </h3>
@@ -170,8 +171,8 @@ className="w-11 h-11 rounded-2xl bg-white/10 border border-white/10 flex items-c
           <div className="text-center lg:text-left">
 
             <h3
-              className="text-[32px] sm:text-4xl font-bold text-orange-400 mb-7"
-              style={{ fontFamily: "Cormorant Garamond" }}
+               className="text-2xl sm:text-3xl font-bold text-orange-400 mb-7"
+  style={{ fontFamily: "Cormorant Garamond" }}
             >
               Contact Info
             </h3>

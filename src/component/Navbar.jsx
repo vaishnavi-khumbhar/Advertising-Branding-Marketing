@@ -28,35 +28,37 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-white/70 backdrop-blur-2xl border-b border-white/40 shadow-lg"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-5 lg:px-10">
-        <div className="flex items-center justify-between h-20">
+  className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+    scrolled
+      ? "bg-white/90 backdrop-blur-2xl border-b border-orange-100 shadow-lg"
+      : "bg-transparent border-transparent"
+  }`}
+>
+      <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-10">
+
+        <div className="flex items-center justify-between h-16 sm:h-20">
 
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-
+          <Link
+            to="/"
+            className="flex items-center gap-2 flex-1 min-w-0"
+          >
             <img
               src={logo}
               alt="AB Marketing Wings"
-              className="h-14 md:h-14 object-contain"
+              className="h-10 sm:h-14 w-auto object-contain flex-shrink-0"
             />
 
-            <div className="flex flex-col">
+            <div className="min-w-0">
               <h2
-                className="text-sm sm:text-xl md:text-2xl font-bold text-gray-900 leading-tight"
-                style={{ fontFamily: "Cormorant Garamond" }}
+className="text-[14px] sm:text-xl md:text-2xl font-bold text-[#0F1E3D] leading-tight"                style={{ fontFamily: "Cormorant Garamond" }}
               >
                 Advertising Branding & Marketing
               </h2>
 
               <p
-                className="text-[10px] sm:text-sm text-gray-500"
-                style={{ fontFamily: "Poppins" }}
+                className="text-[8px] sm:text-sm text-gray-500 truncate"
+                style={{  fontFamily: "Cormorant Garamond"  }}
               >
                 Digital Growth Partner
               </p>
@@ -64,7 +66,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-<nav className="hidden lg:flex items-center gap-8 ml-auto mr-8">
+          <nav className="hidden lg:flex items-center gap-8 ml-auto mr-8">
 
             {navLinks.map((link) => (
               <NavLink
@@ -73,21 +75,22 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `relative text-lg font-medium transition duration-300 ${
                     isActive
-                      ? "text-blue-600"
-                      : "text-gray-700 hover:text-blue-600"
+                      ? "text-[#FF7A00]"
+                      : "text-[#0F1E3D] hover:text-[#FF7A00]"
                   }`
                 }
-                style={{ fontFamily: "Poppins" }}
+                style={{  fontFamily: "Cormorant Garamond" ,
+ }}
               >
                 {({ isActive }) => (
                   <>
                     {link.name}
 
                     <span
-                      className={`absolute left-0 -bottom-2 h-[2px] bg-orange-400 transition-all duration-300 ${
+                      className={`absolute left-0 -bottom-2 h-[2px] bg-[#FF7A00] transition-all duration-300 ${
                         isActive ? "w-full" : "w-0"
                       }`}
-                    ></span>
+                    />
                   </>
                 )}
               </NavLink>
@@ -95,11 +98,13 @@ const Navbar = () => {
 
           </nav>
 
-          {/* CTA */}
+          {/* Desktop CTA */}
           <a
             href="tel:+917058527549"
-className="hidden lg:flex items-center px-5 py-2.5 rounded-full bg-gradient-to-r from-sky-500 to-orange-400 text-white shadow-lg hover:scale-105 transition-all duration-300 text-sm"            style={{
-              fontFamily: "Poppins",
+            className="hidden lg:flex items-center px-5 py-2.5 rounded-full bg-[#FF7A00] text-white shadow-lg hover:scale-105 transition-all duration-300 text-sm"
+            style={{
+           fontFamily: "Cormorant Garamond" ,
+
               fontWeight: 600,
             }}
           >
@@ -108,59 +113,70 @@ className="hidden lg:flex items-center px-5 py-2.5 rounded-full bg-gradient-to-r
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-gray-800"
+            className="lg:hidden ml-2 flex-shrink-0 text-[#0F1E3D]"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X size={30} /> : <Menu size={30} />}
+            {isOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
+
         </div>
       </div>
 
       {/* Mobile Menu */}
       <AnimatePresence>
+  {isOpen && (
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.3 }}
+      className="lg:hidden"
+    >
+     <div className="relative overflow-hidden border-t border-sky-100 bg-gradient-to-br from-white via-[#F7FAFF] to-[#EAF4FF] shadow-2xl">
 
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -40 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -40 }}
-            transition={{ duration: 0.3 }}
-            className="lg:hidden bg-white/90 backdrop-blur-2xl shadow-xl border-t border-slate-100"
-          >
-            <div className="flex flex-col items-center text-center gap-7 py-8">
+  <div className="absolute -top-10 -left-10 h-32 w-32 rounded-full bg-sky-200/30 blur-3xl" />
+  <div className="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-blue-200/20 blur-3xl" />
+  
+        <div className="relative px-6 py-8">
 
-              {navLinks.map((link) => (
-                <NavLink
-                  key={link.name}
-                  to={link.path}
-                  onClick={() => setIsOpen(false)}
-                  className={({ isActive }) =>
+          <div className="flex flex-col items-center text-center gap-6">
+
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.name}
+                to={link.path}
+                onClick={() => setIsOpen(false)}
+                className={({ isActive }) =>
+                  `text-lg font-semibold transition-all duration-300 ${
                     isActive
-                      ? "text-blue-600 text-lg font-semibold"
-                      : "text-gray-700 text-lg font-medium hover:text-blue-600 transition"
-                  }
-                  style={{ fontFamily: "Poppins" }}
-                >
-                  {link.name}
-                </NavLink>
-              ))}
-
-              <a
-                href="tel:+917058527549"
-                className="px-7 py-3 rounded-full bg-gradient-to-r from-sky-500 to-orange-400 text-white shadow-xl hover:scale-105 transition-all duration-300"
-                style={{
-                  fontFamily: "Poppins",
-                  fontWeight: 600,
-                }}
+                      ? "text-[#FF7A00]"
+                      : "text-[#0F1E3D] hover:text-[#FF7A00]"
+                  }`
+                }
+                style={{  fontFamily: "Cormorant Garamond" ,
+ }}
               >
-                Free Consultation →
-              </a>
+                {link.name}
+              </NavLink>
+            ))}
 
-            </div>
-          </motion.div>
-        )}
+            <a
+              href="tel:+917058527549"
+              className="mt-2 inline-flex items-center justify-center rounded-full bg-[#FF7A00] px-8 py-3 text-white font-semibold shadow-lg shadow-orange-300/30 transition-all duration-300 hover:scale-105"
+              style={{  fontFamily: "Cormorant Garamond" ,
+ }}
+            >
+              Free Consultation →
+            </a>
 
-      </AnimatePresence>
+          </div>
+
+        </div>
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </header>
   );
 };
