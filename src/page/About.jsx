@@ -198,9 +198,8 @@ function About() {
           </span>
 
           <h1
-            className="font-['Playfair_Display',serif] text-3xl sm:text-4xl font-bold leading-tight text-[#0F1E3D] md:text-5xl"
-            data-aos="fade-up"   style={{ fontFamily: "Cormorant Garamond, serif" }}
-
+             className="font-['Playfair_Display',serif] text-3xl sm:text-4xl font-bold leading-tight text-[#0F1E3D] md:text-5xl"
+            data-aos="fade-up"
           >
             About Advertising
             <span className="block text-[#FF6B1A]">and Branding Marketing</span>
@@ -626,18 +625,18 @@ function About() {
 
              <button
   onClick={() => navigate("/contact")}
-  className="
-    mt-7 inline-flex items-center gap-2
-    rounded-full
-    bg-orange-500
-    px-7 py-3
-    font-semibold text-white
-    shadow-lg shadow-orange-500/30
-    transition-all duration-300
-    hover:bg-orange-600
-    hover:scale-105 hover:shadow-xl
-    group
-  "
+className="
+  mt-7 inline-flex items-center gap-2
+  rounded-full
+  bg-orange-500
+  px-7 py-3
+  text-lg md:text-xl
+  font-semibold text-white
+  shadow-lg shadow-orange-500/30
+  transition-all duration-300
+  hover:bg-orange-600
+  hover:scale-105 hover:shadow-xl
+"
   style={{ fontFamily: "Cormorant Garamond, serif" }}
 >
   Connect With Us
@@ -995,17 +994,19 @@ bg-gradient-to-br from-white via-[#F7FAFF] to-[#FFF6F0]">
 
     {/* Button */}
    <button
-  onClick={() => navigate("/contact")}
-  className="
-    mt-7 inline-flex items-center gap-2
-    rounded-full
-    bg-orange-500
-    px-7 py-3
-    font-semibold text-white
-    shadow-lg shadow-orange-500/30
-    transition-all duration-300
-    hover:bg-orange-600
-    hover:scale-105 hover:shadow-xl
+ onClick={() => navigate("/contact")}
+className="
+  mt-7 inline-flex items-center gap-2
+  rounded-full
+  bg-orange-500
+  px-7 py-3
+  text-lg md:text-xl
+  font-semibold text-white
+  shadow-lg shadow-orange-500/30
+  transition-all duration-300
+  hover:bg-orange-600
+  hover:scale-105 hover:shadow-xl
+
   "
   style={{ fontFamily: "Cormorant Garamond, serif" }}
 >

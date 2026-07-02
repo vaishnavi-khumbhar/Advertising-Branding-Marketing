@@ -162,10 +162,9 @@ const brands = [
 
 const Hero = () => {
   return (
-<section className="relative overflow-hidden min-h-[80vh] pt-26 pb-15 bg-gradient-to-br from-sky-50 via-white to-orange-50">      {/* Background Blobs */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-sky-200/30 rounded-full blur-3xl"></div>
+<section className="relative overflow-hidden min-h-[80vh] pt-16 sm:pt-20 lg:pt-24 pb-12 sm:pb-15 bg-gradient-to-br from-sky-50 via-white to-orange-50">      <div className="absolute top-0 left-0 w-72 h-72 bg-sky-200/30 rounded-full blur-3xl"></div>
 
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-200/30 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-90 h-90 bg-orange-200/30 rounded-full blur-3xl"></div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
 
@@ -204,8 +203,7 @@ const Hero = () => {
 </span>
             {/* Heading */}
         <h1
-  className="mt-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1] font-bold text-gray-900"
-  style={{ fontFamily: "Cormorant Garamond" }}
+className="mt-4 sm:mt-6 lg:mt-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1] font-bold text-gray-900"  style={{ fontFamily: "Cormorant Garamond" }}
 >
   Turn Attention Into
 
@@ -261,9 +259,9 @@ const Hero = () => {
 <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-wrap justify-center lg:justify-start gap-6 lg:gap-8 " style={{ fontFamily: "Cormorant Garamond" }}>
   {stats.map((stat, i) => (
     <div
-      key={stat.label}
-      className="flex items-center gap-3 justify-center sm:justify-start"
-    >
+  key={stat.label}
+  className="flex items-center gap-3 justify-center sm:justify-start font-bold"
+>
       {/* Icon */}
       <div
         className={`w-12 h-12 sm:w-13 sm:h-13 rounded-full ${stat.bg} flex items-center justify-center flex-shrink-0`}
@@ -337,10 +335,15 @@ const Hero = () => {
   <div className="bg-sky-50 rounded-3xl p-4 sm:p-5">
     <div className="flex justify-between items-center">
 
-      <span className="text-base sm:text-lg text-gray-500 ">
-        Website Traffic
-      </span>
-
+    <span
+  className="text-base sm:text-lg font-bold text-gray-700"
+  style={{
+    fontFamily: "'Cormorant Garamond', serif",
+    fontWeight: 700,
+  }}
+>
+  Website Traffic
+</span>
       <TrendingUp className="text-blue-600 w-6 h-6" />
 
     </div>
@@ -366,11 +369,15 @@ const Hero = () => {
   <div className="bg-orange-50 rounded-3xl p-4 sm:p-5">
     <div className="flex justify-between items-center">
 
-      <span className="text-base sm:text-lg text-gray-500"
-      style={{ fontFamily: "Cormorant Garamond" }}
+     <span
+  className="text-base sm:text-lg font-bold text-gray-700"
+  style={{
+    fontFamily: "'Cormorant Garamond', serif",
+    fontWeight: 700,
+  }}
 >
-        Leads Generated
-      </span>
+  Leads Generated
+</span>
 
       <Users className="text-orange-500 w-6 h-6" />
 
@@ -397,11 +404,15 @@ const Hero = () => {
   <div className="bg-sky-50 rounded-3xl p-4 sm:p-5">
     <div className="flex justify-between items-center">
 
-      <span className="text-base sm:text-lg text-gray-500 " style={{ fontFamily: "Cormorant Garamond" }}>
-        
-        Conversion Rate
-      </span>
-
+      <span
+  className="text-base sm:text-lg font-bold text-gray-700"
+  style={{
+    fontFamily: "'Cormorant Garamond', serif",
+    fontWeight: 700,
+  }}
+>
+  Conversion Rate
+</span>
       <Target className="text-blue-600 w-6 h-6" />
 
     </div>  
@@ -487,12 +498,16 @@ const Hero = () => {
         </div>
 
         {/* Brand Name */}
-        <span
-          className="text-base md:text-xl font-semibold text-gray-700"
-          style={{  fontFamily: "Cormorant Garamond"  }}
-        >
-          {brand.name}
-        </span>
+       <span
+  className="text-base md:text-xl font-extrabold text-[#0F1E3D]"
+  style={{
+    fontFamily: "'Cormorant Garamond', serif",
+    fontWeight: 800,
+  }}
+>
+  {brand.name}
+</span>
+
       </div>
     ))}
   </div>

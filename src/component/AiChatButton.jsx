@@ -116,17 +116,23 @@ const AiChatButton = () => {
 
           <div>
             <p
-  className="font-medium text-[#0F1E3D]"
-  style={{ fontFamily: "Cormorant Garamond" }}
+  className="text-lg font-bold text-[#0F1E3D]"
+  style={{
+    fontFamily: "'Cormorant Garamond', serif",
+    fontWeight: 700,
+  }}
 >
   Need help?
 </p>
 
 <p
-  className="text-xs text-gray-500"
-  style={{ fontFamily: "Cormorant Garamond" }}
+  className="text-sm font-semibold text-gray-600"
+  style={{
+    fontFamily: "'Cormorant Garamond', serif",
+    fontWeight: 600,
+  }}
 >
-  I’m your AI assistant
+  I'm your AI assistant
 </p>
           </div>
         </div>

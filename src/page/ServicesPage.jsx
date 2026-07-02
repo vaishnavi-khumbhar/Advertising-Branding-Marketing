@@ -148,8 +148,6 @@ function Services() {
           </span>
 
           
-
-
           <h1
             className="font-['Playfair_Display',serif] text-3xl sm:text-4xl font-bold leading-tight text-[#0F1E3D] md:text-5xl"
             data-aos="fade-up"
@@ -164,23 +162,49 @@ function Services() {
             and grow revenue.
           </p>
 
-          <div
-            className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-3 sm:gap-4"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
-            <button
-              onClick={() => navigate("/contact")}
-              className="rounded-full bg-gradient-to-r from-[#FF6B1A] to-[#FF8A3D] px-6 sm:px-7 py-3 text-sm sm:text-base font-semibold text-white shadow-lg shadow-[#FF6B1A]/25 transition-all hover:scale-105 hover:shadow-xl"
-            >
-              Book Free Consultation
-            </button>
-            <button
-              onClick={() => navigate("/OurWork")}
-              className="rounded-full border-2 border-[#0F1E3D] px-6 sm:px-7 py-3 text-sm sm:text-base font-semibold text-[#0F1E3D] transition-all hover:bg-[#0F1E3D] hover:text-white hover:scale-105"
-            >
-              View Our Work
-            </button>
+            <div
+  className="
+    flex flex-col sm:flex-row
+    gap-4
+    items-center
+    justify-center
+    mt-6
+  "
+  style={{ fontFamily: "Cormorant Garamond, serif" }}
+>
+           <button
+    onClick={() => navigate("/contact")}
+    className="
+      rounded-full
+      bg-white
+      border-2 border-orange-500
+      px-6 sm:px-7 py-3
+      text-lg sm:text-xl font-bold text-orange-600
+      shadow-lg
+      transition-all duration-300
+      hover:bg-orange-500 hover:text-white
+      hover:scale-105 hover:shadow-xl
+      w-full sm:w-auto
+    "
+  >
+    Book Free Consultation
+  </button>
+
+  <button
+    onClick={() => navigate("/OurWork")}
+    className="
+      rounded-full
+      border-2 border-orange-500
+      px-6 sm:px-7 py-3
+      text-lg sm:text-xl font-bold text-orange-600
+      transition-all duration-300
+      hover:bg-orange-500 hover:text-white
+      hover:scale-105 hover:shadow-lg
+      w-full sm:w-auto
+    "
+  >
+    View Our Work
+  </button>
           </div>
         </div>
       </section>
@@ -378,17 +402,20 @@ bg-gradient-to-br from-white via-[#F7FAFF] to-[#FFF6F0]">
     {/* Button */}
     <button
       onClick={() => navigate("/contact")}
-      className="
-        mt-7 inline-flex items-center gap-2
-        rounded-full
-        bg-gradient-to-r from-[#0070B8] to-[#FF6B1A]
-        px-7 py-3
-        font-semibold text-white
-        shadow-lg shadow-blue-500/20
-        transition-all duration-300
-        hover:scale-105 hover:shadow-xl
-      "
-    >
+className="
+  mt-7 inline-flex items-center gap-2
+  rounded-full
+  bg-orange-500
+  px-7 py-3
+  text-lg md:text-xl
+  font-semibold text-white
+  shadow-lg shadow-orange-500/30
+  transition-all duration-300
+  hover:bg-orange-600
+  hover:scale-105 hover:shadow-xl
+"
+     style={{ fontFamily: "Cormorant Garamond, serif" }}
+ >
       Contact Us Today
     </button>
 
