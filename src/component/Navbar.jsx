@@ -48,8 +48,7 @@ const Navbar = () => {
 
             <div className="min-w-0">
               <h2
-className="text-[13px] sm:text-xl md:text-2xl font-bold text-[#0F1E3D] leading-tight tracking-tight"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+className="text-[16px] sm:text-xl md:text-2xl font-bold text-[#0F1E3D] leading-tight tracking-tight"                style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
                 Advertising Branding{" "}
                 <span className="bg-gradient-to-r from-[#FF7A00] to-[#FF9A3D] bg-clip-text text-transparent">

@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
 
-* {
-  fontFamily: "'Inter', sans-serif"
-}
+
 
 .perspective {
   perspective: 1200px;
