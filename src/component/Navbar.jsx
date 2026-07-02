@@ -48,7 +48,7 @@ const Navbar = () => {
 
             <div className="min-w-0">
               <h2
-                className="text-[13px] sm:text-xl md:text-2xl font-bold text-[#0F1E3D] leading-tight tracking-tight"
+className="text-[13px] sm:text-xl md:text-2xl font-bold text-[#0F1E3D] leading-tight tracking-tight"
                 style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
                 Advertising Branding{" "}
@@ -56,13 +56,14 @@ const Navbar = () => {
                   &amp; Marketing
                 </span>
               </h2>
-
-              <p
-                className="text-[8px] sm:text-sm text-gray-500 truncate tracking-wide uppercase"
-                style={{ fontFamily: "'Cormorant Garamond', serif", letterSpacing: "0.08em" }}
-              >
-                Digital Growth Partner
-              </p>
+<p
+className="text-[10px] sm:text-sm text-[#FF7A00] truncate tracking-[0.1em] uppercase font-bold"  style={{
+    fontFamily: "'Cormorant Garamond', serif",
+    letterSpacing: "0.08em",
+  }}
+>
+  Digital Growth Partner
+</p>
             </div>
           </Link>
 

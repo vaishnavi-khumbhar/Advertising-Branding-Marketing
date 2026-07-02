@@ -215,15 +215,15 @@ className="mt-4 sm:mt-6 lg:mt-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl lea
   Market <span className="text-orange-500">Leaders</span>
 </h1>
             {/* Paragraph */}
-            <p
-              className="mt-6 text-xl text-gray-600 leading-relaxed max-w-xl md:text-xl lg:text-2xl"
-              style={{ fontFamily: "Poppins" }}
-            >
-              We collaborate with ambitious brands to create the
-              next wave of digital innovation. Through branding,
-              performance marketing, websites, and content,
-              we help businesses grow faster, smarter, and stronger.
-            </p>
+           <p
+  className="mt-6 max-w-xl text-lg md:text-xl lg:text-2xl leading-relaxed text-gray-700 font-medium"
+  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+>
+  We collaborate with ambitious brands to create the
+  next wave of digital innovation. Through branding,
+  performance marketing, websites, and content,
+  we help businesses grow faster, smarter, and stronger.
+</p>
 
             {/* Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
