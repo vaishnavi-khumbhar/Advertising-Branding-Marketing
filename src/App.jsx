@@ -19,7 +19,7 @@ AiChatButton
 
 function App() {
   return (
-    <BrowserRouter basename="/Advertising-Branding-Marketing">
+    <BrowserRouter>
        
 
       <Navbar />

@@ -1,4 +1,3 @@
-import Navbar from "../component/Navbar";
 import Hero from "../component/Hero";
 import TrustBar from "../component/TrustBar";
 import GrowthApproach from "../component/GrowthApproach";
@@ -7,7 +6,6 @@ import WhyChooseUs from "../component/WhyChooseUs";
 import Results from "../component/Results";
 import Testimonials from "../component/Testimonials";
 import CTA from "../component/CTA";
-import Footer from "../component/Footer";
 
 
 
@@ -17,7 +15,7 @@ const Home = () => {
   return (
     <>
       {/* Navbar */}
-      <Navbar />
+     
 
        {/* Hero Section */}
       <Hero />
