@@ -151,9 +151,9 @@ export default function Services() {
                     key={i}
                     className="flex items-center justify-between border-b border-slate-100 pb-3"
                   >
-                    <span className="text-gray-500">
-                      {item}
-                    </span>
+                   <span className="text-[#0F1E3D] text-lg md:text-xl font-semibold leading-relaxed">
+  {item}
+</span>
 
                     <ArrowUpRight
                       size={18}

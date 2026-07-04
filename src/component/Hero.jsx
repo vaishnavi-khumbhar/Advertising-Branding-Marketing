@@ -452,7 +452,7 @@ className="mt-4 sm:mt-6 lg:mt-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl lea
     </div>
 
     <div style={{ fontFamily: "Cormorant Garamond" }}>
-      <p className="text-gray-500 text-base">Meta Ads ROI</p>
+      <p className="text-orange-500 text-base">Meta Ads ROI</p>
       <h3 className="text-3xl font-bold text-orange-500">4.8x</h3>
     </div>
   </div>
@@ -472,7 +472,7 @@ className="mt-4 sm:mt-6 lg:mt-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl lea
     </div>
 
     <div style={{ fontFamily: "Cormorant Garamond" }}>
-      <p className="text-gray-500 text-base">Organic Growth</p>
+      <p className="text-blue-600 text-base">Organic Growth</p>
       <h3 className="text-3xl font-bold text-blue-600">+100%</h3>
     </div>
   </div>
