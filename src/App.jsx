@@ -19,8 +19,7 @@ AiChatButton
 
 function App() {
   return (
-    <BrowserRouter>
-       
+<BrowserRouter basename="/Advertising-Branding-Marketing">       
 
       <Navbar />
  <ScrollToTop />
