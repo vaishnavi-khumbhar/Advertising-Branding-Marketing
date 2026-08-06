@@ -15,27 +15,29 @@ import AiChatButton from "./component/AiChatButton";
 import EnquiryWidget from "./component/EnquiryWidget";
 
 
-AiChatButton
-
 function App() {
   return (
-<BrowserRouter basename="/Advertising-Branding-Marketing">
-  <Navbar />
-  <ScrollToTop />
+    <BrowserRouter basename="/Advertising-Branding-Marketing">
 
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/about" element={<About />} />
-    <Route path="/services" element={<ServicesPage />} />
-    <Route path="/case-studies" element={<CaseStudies />} />
-    <Route path="/contact" element={<Contact />} />
-  </Routes>
+      <Navbar />
 
-  <Footer />
-  <WhatsAppButton />
-  <AiChatButton />
-  <EnquiryWidget />
-</BrowserRouter>
+      <ScrollToTop />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
+      <Footer />
+
+      <WhatsAppButton />
+      <AiChatButton />
+      <EnquiryWidget />
+
+    </BrowserRouter>
   );
 }
 
