@@ -149,7 +149,7 @@ function Services() {
 
           
           <h1
-            className="font-['Playfair_Display',serif] text-3xl sm:text-4xl font-bold leading-tight text-[#0F1E3D] md:text-5xl"
+            className="font-['Playfair_Display',serif] text-3xl sm:text-4xl font-bold leading-tight text-[#005EA8] md:text-5xl"
             data-aos="fade-up"
           >
             Digital Marketing
