@@ -19,23 +19,23 @@ AiChatButton
 
 function App() {
   return (
-<BrowserRouter basename="/Advertising-Branding-Marketing">       
+<BrowserRouter basename="/Advertising-Branding-Marketing">
+  <Navbar />
+  <ScrollToTop />
 
-      <Navbar />
- <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/case-studies" element={<CaseStudies />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/services" element={<ServicesPage />} />
+    <Route path="/case-studies" element={<CaseStudies />} />
+    <Route path="/contact" element={<Contact />} />
+  </Routes>
 
-      <Footer />
-       <WhatsAppButton />
-    <AiChatButton/>
-    <EnquiryWidget/>
-    </BrowserRouter>
+  <Footer />
+  <WhatsAppButton />
+  <AiChatButton />
+  <EnquiryWidget />
+</BrowserRouter>
   );
 }
 
