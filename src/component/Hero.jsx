@@ -1,7 +1,17 @@
 import React, { useEffect, useState } from "react";
-import digitalMarketingImg from "../assets/Hero.jpeg";
+import { useNavigate } from "react-router-dom";
 
-  
+import digitalMarketingImg from "../assets/Hero.jpeg";
+import websiteImg from "../assets/Hero2.jpg";
+import socialImg from "../assets/Hero3.jpg";
+import brandingImg from "../assets/Hero4.jpg";
+import videoImg from "../assets/Hero5.jpg";
+import googleImg from "../assets/Hero6.jpg";
+import metaImg from "../assets/Hero7.jpg";
+
+
+
+
 const SERVICES = [
   {
     title: "Digital Marketing",
@@ -9,27 +19,27 @@ const SERVICES = [
   },
   {
     title: "Website Development",
-    image: digitalMarketingImg,
+    image: websiteImg,
   },
   {
     title: "Social Media Marketing",
-    image: digitalMarketingImg,
+    image: socialImg,
   },
   {
     title: "Branding & Creative Design",
-    image: digitalMarketingImg,
+    image: brandingImg,
   },
   {
     title: "Video Editing",
-    image: digitalMarketingImg,
+    image: videoImg,
   },
   {
     title: "Google Ads / PPC",
-    image: digitalMarketingImg,
+    image: googleImg,
   },
   {
     title: "Meta Advertising",
-    image: digitalMarketingImg,
+    image: metaImg,
   },
 ];
 
@@ -43,6 +53,8 @@ export default function HeroSlider() {
 
     return () => clearInterval(timer);
   }, []);
+
+    const navigate = useNavigate();
 
   return (
     <section className="relative w-full overflow-hidden bg-white pt-16 sm:pt-20 lg:pt-18">
@@ -121,49 +133,59 @@ export default function HeroSlider() {
 
                     <div className="mt-10 flex flex-wrap gap-5">
 
-                      <button
-                        className="
-                          rounded-full
-                          bg-gradient-to-r
-                          from-[#FF7A00]
-                          to-[#FF9838]
-                          px-9
-                          py-4
-                          text-lg
-                          font-semibold
-                          text-white
-                          shadow-[0_20px_40px_rgba(255,122,0,0.4)]
-                          transition-all
-                          duration-300
-                          hover:-translate-y-1
-                          hover:scale-105
-                          hover:shadow-[0_24px_46px_rgba(255,122,0,0.55)]
-                        "
-                      >
-                        Get Started
-                      </button>
 
-                      <button
-                        className="
-                          rounded-full
-                          border
-                          border-white/70
-                          bg-white/10
-                          backdrop-blur-lg
-                          px-9
-                          py-4
-                          text-lg
-                          font-semibold
-                          text-white
-                          transition-all
-                          duration-300
-                          hover:bg-white
-                          hover:text-[#0A3D73]
-                          hover:-translate-y-1
-                        "
-                      >
-                        View Services
-                      </button>
+
+ 
+      {/* Your Hero Code */}
+
+      <button
+        onClick={() => navigate("/about")}
+        className="
+          rounded-full
+          bg-gradient-to-r
+          from-[#FF7A00]
+          to-[#FF9838]
+          px-9
+          py-4
+          text-lg
+          font-semibold
+          text-white
+          shadow-[0_20px_40px_rgba(255,122,0,0.4)]
+          transition-all
+          duration-300
+          hover:-translate-y-1
+          hover:scale-105
+          hover:shadow-[0_24px_46px_rgba(255,122,0,0.55)]
+        "
+      >
+        Get Started
+      </button>
+
+
+      <button
+        onClick={() => navigate("/services")}
+        className="
+          rounded-full
+          border
+          border-white/70
+          bg-white/10
+          backdrop-blur-lg
+          px-9
+          py-4
+          text-lg
+          font-semibold
+          text-white
+          transition-all
+          duration-300
+          hover:bg-white
+          hover:text-[#0A3D73]
+          hover:-translate-y-1
+        "
+      >
+        View Services
+      </button>
+
+    
 
                     </div>
                   </div>
