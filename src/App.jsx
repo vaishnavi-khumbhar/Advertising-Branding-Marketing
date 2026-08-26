@@ -14,10 +14,9 @@ import WhatsAppButton from "./component/WhatsAppButton";
 import AiChatButton from "./component/AiChatButton";
 import EnquiryWidget from "./component/EnquiryWidget";
 
-
 function App() {
   return (
-    <BrowserRouter basename="/Advertising-Branding-Marketing">
+    <BrowserRouter>
 
       <Navbar />
 
